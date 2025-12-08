@@ -5,7 +5,12 @@ function GetAccountByIdentifier(identifier, cb)
 end
 
 function CreateAccount(identifier, name, cb)
-    DB.insert("INSERT INTO accounts (identifier, name, is_whitelisted, `group`) VALUES (?, ?, ?, ?)", { identifier, name, 0, "user" }, function(id)
+    DB.insert("INSERT INTO accounts (identifier, name, is_whitelisted, `group`) VALUES (?, ?, ?, ?)", {
+        identifier,
+        name,
+        0,
+        "user"
+    }, function(id)
         if cb then
             cb(id)
         end

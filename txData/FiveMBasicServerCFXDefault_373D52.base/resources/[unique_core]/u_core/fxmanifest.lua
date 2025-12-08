@@ -9,7 +9,10 @@ server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/config.lua',
     'server/db.lua',
-    'server/accounts.lua'
+    'server/accounts.lua',
+    'server/characters.lua',
+    'server/player.lua',
+    'server/main.lua'
 }
 
 client_scripts {
@@ -19,5 +22,7 @@ client_scripts {
 server_exports {
     'GetAccountByIdentifier',
     'CreateAccount',
-    'SetAccountWhitelisted'
+    'SetAccountWhitelisted',
+    'GetPlayer',
+    'GetPlayerByIdentifier'
 }
