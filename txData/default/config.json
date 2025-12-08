@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "general": {
+    "serverName": "Unique Roleplay"
+  },
+  "server": {
+    "dataPath": "C:/Users/Anwender/Desktop/FXServer/txData/FiveMBasicServerCFXDefault_373D52.base/"
+  }
+}
