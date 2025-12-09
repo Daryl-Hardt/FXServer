@@ -11,13 +11,17 @@ function GetCharacterById(id, cb)
 end
 
 function CreateCharacter(accountId, firstname, lastname, gender, cb)
-    DB.insert("INSERT INTO characters (account_id, firstname, lastname, gender, money, bank) VALUES (?, ?, ?, ?, ?, ?)", {
+    DB.insert("INSERT INTO characters (account_id, firstname, lastname, gender, money, bank, pos_x, pos_y, pos_z, heading) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", {
         accountId,
         firstname,
         lastname,
         gender or 0,
         Config.StartMoney,
-        Config.StartBank
+        Config.StartBank,
+        Config.InitialSpawn.x,
+        Config.InitialSpawn.y,
+        Config.InitialSpawn.z,
+        Config.InitialSpawn.heading
     }, function(id)
         if cb then
             cb(id)

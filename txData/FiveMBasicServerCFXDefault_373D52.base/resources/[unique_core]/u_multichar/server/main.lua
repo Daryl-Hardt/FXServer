@@ -62,9 +62,10 @@ AddEventHandler('u_multichar:selectCharacter', function(data)
     local charId = tonumber(data.id)
     if not charId then return end
 
-    exports['u_core']:UseCharacter(src, charId, function(success, result)
+    exports['u_core']:UseCharacter(src, charId, function(success, spawn)
         if success then
             TriggerClientEvent('u_multichar:close', src)
+            TriggerClientEvent('u_multichar:spawn', src, spawn)
             TriggerClientEvent('chat:addMessage', src, {
                 args = { "System", "Charakter geladen." }
             })
@@ -75,6 +76,8 @@ AddEventHandler('u_multichar:selectCharacter', function(data)
         end
     end)
 end)
+
+
 
 RegisterNetEvent('u_multichar:deleteCharacter')
 AddEventHandler('u_multichar:deleteCharacter', function(data)

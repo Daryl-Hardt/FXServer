@@ -16,6 +16,10 @@ function UCore.Player.new(src, account, character)
     self.gender = character.gender
     self.money = character.money or 0
     self.bank = character.bank or 0
+    self.pos_x = character.pos_x or 0.0
+    self.pos_y = character.pos_y or 0.0
+    self.pos_z = character.pos_z or 0.0
+    self.heading = character.heading or 0.0
     UCore.Players[src] = self
     return self
 end
@@ -50,6 +54,10 @@ end
 
 function UCore.Player:GetBank()
     return self.bank
+end
+
+function UCore.Player:GetPosition()
+    return self.pos_x, self.pos_y, self.pos_z, self.heading
 end
 
 function UCore.Player:AddMoney(amount)

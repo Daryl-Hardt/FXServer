@@ -10,14 +10,21 @@ end
 
 AddEventHandler("playerDropped", function(reason)
     local src = source
-    if UCore.GetPlayer(src) then
+    local player = UCore.GetPlayer(src)
+    if player then
+        DB.execute("UPDATE characters SET pos_x = ?, pos_y = ?, pos_z = ?, heading = ? WHERE id = ?", {
+            player.pos_x,
+            player.pos_y,
+            player.pos_z,
+            player.heading,
+            player.charId
+        })
         if Config.Debug then
             print("[u_core] Player entfernt: " .. tostring(src) .. " Grund: " .. tostring(reason))
         end
         UCore.RemovePlayer(src)
     end
 end)
-
 
 RegisterCommand("createchar", function(source, args, raw)
     local src = source
@@ -123,9 +130,34 @@ function UseCharacter(src, charId, cb)
                 return
             end
 
+            local spawn = {}
+
+            if character.pos_x == 0 and character.pos_y == 0 and character.pos_z == 0 then
+                spawn.x = Config.InitialSpawn.x
+                spawn.y = Config.InitialSpawn.y
+                spawn.z = Config.InitialSpawn.z
+                spawn.heading = Config.InitialSpawn.heading
+            else
+                spawn.x = character.pos_x
+                spawn.y = character.pos_y
+                spawn.z = character.pos_z
+                spawn.heading = character.heading
+            end
+
             local player = UCore.Player.new(src, account, character)
 
-            if cb then cb(true, player) end
+            if cb then cb(true, spawn) end
         end)
     end)
 end
+
+RegisterNetEvent('u_core:updatePosition')
+AddEventHandler('u_core:updatePosition', function(x, y, z, heading)
+    local src = source
+    local player = UCore.GetPlayer(src)
+    if not player then return end
+    player.pos_x = x + 0.0
+    player.pos_y = y + 0.0
+    player.pos_z = z + 0.0
+    player.heading = heading + 0.0
+end)
