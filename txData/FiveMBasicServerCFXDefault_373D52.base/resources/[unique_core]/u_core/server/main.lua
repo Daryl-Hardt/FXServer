@@ -8,29 +8,6 @@ local function GetLicenseIdentifier(src)
     return nil
 end
 
-AddEventHandler("playerJoining", function(oldId)
-    local src = source
-    local identifier = GetLicenseIdentifier(src)
-    if not identifier then
-        return
-    end
-
-    GetAccountByIdentifier(identifier, function(account)
-        if not account then
-            return
-        end
-
-        GetCharactersByAccountId(account.id, function(chars)
-            if Config.Debug then
-                print("[u_core] Spieler " .. account.name .. " hat " .. tostring(#chars) .. " Charakter(e)")
-            end
-            TriggerClientEvent("chat:addMessage", src, {
-                args = { "System", "Du hast " .. tostring(#chars) .. " Charakter(e). Nutze /createchar oder /usechar <id>." }
-            })
-        end)
-    end)
-end)
-
 AddEventHandler("playerDropped", function(reason)
     local src = source
     if UCore.GetPlayer(src) then
@@ -40,6 +17,7 @@ AddEventHandler("playerDropped", function(reason)
         UCore.RemovePlayer(src)
     end
 end)
+
 
 RegisterCommand("createchar", function(source, args, raw)
     local src = source
@@ -115,3 +93,39 @@ RegisterCommand("usechar", function(source, args, raw)
         end)
     end)
 end, false)
+
+function UseCharacter(src, charId, cb)
+    local function GetLicenseIdentifier(localSrc)
+        local identifiers = GetPlayerIdentifiers(localSrc)
+        for _, v in ipairs(identifiers) do
+            if string.sub(v, 1, 7) == "license" then
+                return v
+            end
+        end
+        return nil
+    end
+
+    local identifier = GetLicenseIdentifier(src)
+    if not identifier then
+        if cb then cb(false, "no_identifier") end
+        return
+    end
+
+    GetAccountByIdentifier(identifier, function(account)
+        if not account then
+            if cb then cb(false, "no_account") end
+            return
+        end
+
+        GetCharacterById(charId, function(character)
+            if not character or character.account_id ~= account.id then
+                if cb then cb(false, "invalid_character") end
+                return
+            end
+
+            local player = UCore.Player.new(src, account, character)
+
+            if cb then cb(true, player) end
+        end)
+    end)
+end

@@ -23,6 +23,11 @@ server_exports {
     'GetAccountByIdentifier',
     'CreateAccount',
     'SetAccountWhitelisted',
+    'GetCharactersByAccountId',
+    'GetCharacterById',
+    'CreateCharacter',
+    'DeleteCharacter',
+    'UseCharacter',
     'GetPlayer',
     'GetPlayerByIdentifier'
 }
