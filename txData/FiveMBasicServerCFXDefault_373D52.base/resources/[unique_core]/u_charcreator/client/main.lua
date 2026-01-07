@@ -398,3 +398,17 @@ RegisterNUICallback('cc_close', function(_, cb)
   genderSwitchInProgress = false
   cb({ ok = true })
 end)
+
+exports('ApplySkinToPed', function(ped, row)
+  if not ped or ped == 0 then return end
+  if not DoesEntityExist(ped) then return end
+  if not row then return end
+
+  local appearance = {}
+  if row.appearance and type(row.appearance) == 'string' then
+    appearance = json.decode(row.appearance) or {}
+  end
+
+  appearance = sanitizeAppearance(appearance)
+  applyAppearanceData(ped, appearance)
+end)

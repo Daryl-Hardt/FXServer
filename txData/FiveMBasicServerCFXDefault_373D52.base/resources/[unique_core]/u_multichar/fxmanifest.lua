@@ -5,15 +5,15 @@ name 'u_multichar'
 author 'Unique'
 version '0.0.1'
 
-ui_page 'html/index.html'
+ui_page 'web/dist/index.html'
 
 files {
-    'html/index.html',
-    'html/app.js',
-    'html/style.css'
+  'web/dist/index.html',
+  'web/dist/**/*'
 }
 
 server_scripts {
+    'config.lua',
     'server/main.lua'
 }
 

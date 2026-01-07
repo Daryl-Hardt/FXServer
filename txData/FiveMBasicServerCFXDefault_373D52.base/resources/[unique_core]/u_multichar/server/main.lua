@@ -9,24 +9,86 @@ local function GetLicenseIdentifier(src)
 end
 
 local function SendCharacterList(src)
-    local identifier = GetLicenseIdentifier(src)
-    if not identifier then return end
+  local identifier = GetLicenseIdentifier(src)
+  if not identifier then return end
 
-    exports['u_core']:GetAccountByIdentifier(identifier, function(account)
-        if not account then return end
+  exports['u_core']:GetAccountByIdentifier(identifier, function(account)
+    if not account then return end
 
-        exports['u_core']:GetCharactersByAccountId(account.id, function(chars)
-            TriggerClientEvent('u_multichar:show', src, {
-                accountId = account.id,
-                characters = chars
-            })
-        end)
+    exports['u_core']:GetCharactersByAccountId(account.id, function(chars)
+      chars = chars or {}
+
+      local maxChars = tonumber(account.max_chars) or Config.DefaultMaxChars
+
+      local ids = {}
+      for i = 1, #chars do
+        ids[#ids + 1] = tonumber(chars[i].id)
+      end
+
+      if #ids == 0 then
+        TriggerClientEvent('u_multichar:sceneData', src, { characters = {}, maxChars = maxChars })
+        return
+      end
+
+      local placeholders = {}
+      for i = 1, #ids do placeholders[i] = '?' end
+
+      local q = 'SELECT char_id, model, appearance FROM character_skins WHERE char_id IN (' .. table.concat(placeholders, ',') .. ')'
+      exports.oxmysql:query(q, ids, function(rows)
+        local skinById = {}
+        for i = 1, #(rows or {}) do
+          skinById[tonumber(rows[i].char_id)] = rows[i]
+        end
+
+        for i = 1, #chars do
+          local cid = tonumber(chars[i].id)
+          chars[i].skin = skinById[cid]
+        end
+
+        TriggerClientEvent('u_multichar:sceneData', src, { characters = chars, maxChars = maxChars })
+      end)
     end)
+  end)
 end
 
 RegisterNetEvent('u_multichar:open')
 AddEventHandler('u_multichar:open', function()
-    SendCharacterList(source)
+  SendCharacterList(source)
+end)
+
+RegisterNetEvent('u_multichar:beginCreate')
+AddEventHandler('u_multichar:beginCreate', function()
+  local src = source
+
+  local identifier = GetLicenseIdentifier(src)
+  if not identifier then return end
+
+  exports['u_core']:GetAccountByIdentifier(identifier, function(account)
+    if not account then return end
+
+    exports['u_core']:GetCharactersByAccountId(account.id, function(chars)
+      chars = chars or {}
+      local maxChars = tonumber(account.max_chars) or Config.DefaultMaxChars
+      local count = #chars
+
+      if count >= maxChars then
+        TriggerClientEvent('chat:addMessage', src, { args = { "System", "Du hast keine freien Charakter-Slots." } })
+        SendCharacterList(src)
+        return
+      end
+
+      exports['u_core']:CreateCharacter(account.id, "", "", 0, function(newCharId)
+        if not newCharId then
+          TriggerClientEvent('chat:addMessage', src, { args = { "System", "Charakter konnte nicht erstellt werden." } })
+          SendCharacterList(src)
+          return
+        end
+
+        local spawn = Config.InitialSpawn
+        TriggerClientEvent('u_charcreator:open', src, { charId = newCharId, spawn = spawn, gender = 0 })
+      end)
+    end)
+  end)
 end)
 
 RegisterNetEvent('u_multichar:createCharacter')

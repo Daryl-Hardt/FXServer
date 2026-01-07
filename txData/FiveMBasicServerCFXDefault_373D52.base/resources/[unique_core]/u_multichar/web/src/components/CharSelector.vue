@@ -4,6 +4,7 @@
       <p>Charakterauswahl</p>
       <span>Klicke auf einen Charakter um ihn auszuwählen</span>
     </div>
+
     <div class="character-info">
       <div class="wrapper">
         <div class="titles">
@@ -19,9 +20,15 @@
           <p>{{ character.position }}</p>
         </div>
       </div>
-      <button class="select" v-if="!newCharacter"><i class="fa-solid fa-play"></i> Spielen</button>
-      <button class="select" v-if="newCharacter"><i class="fa-solid fa-plus"></i> Erstellen</button>
+
+      <button class="select" @click="play" :disabled="!selectedCharId">
+        <i class="fa-solid fa-play"></i> Spielen
+      </button>
     </div>
+
+    <button class="select" v-if="newCharacter" @click="create">
+      Neuen Charakter erstellen
+    </button>
   </div>
 </template>
 
@@ -32,12 +39,95 @@ export default {
     return {
       visible: false,
       newCharacter: false,
+      selectedCharId: null,
       character: { name: '-', birthdate: '-', job: '-', position: '-' }
-      //character: { name: 'Leroy Saint', birthdate: '13.08.2004', job: 'Zivilist', position: 'Legion Square' }
+    }
+  },
+  mounted() {
+    window.addEventListener('message', this.onMessage)
+  },
+  beforeUnmount() {
+    window.removeEventListener('message', this.onMessage)
+  },
+  methods: {
+    resource() {
+      return (window.GetParentResourceName && window.GetParentResourceName()) || 'u_multichar'
+    },
+    post(name, payload = {}) {
+      return fetch(`https://${this.resource()}/${name}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+        body: JSON.stringify(payload)
+      })
+    },
+    onMessage(event) {
+      const d = event.data || {}
+      if (d.action === 'close') {
+        this.visible = false
+        this.newCharacter = false
+        this.selectedCharId = null
+        this.character = { name: '-', birthdate: '-', job: '-', position: '-' }
+        return
+      }
+
+      if (d.action === 'openEmpty') {
+        this.visible = true
+        this.newCharacter = d.canCreate === true
+        this.selectedCharId = null
+        this.character = { name: '-', birthdate: '-', job: '-', position: '-' }
+        return
+      }
+
+      if (d.action === 'open') {
+        this.visible = true
+        this.newCharacter = d.canCreate === true
+
+        const c = d.character || {}
+        const fn = (c.firstname || '').toString()
+        const ln = (c.lastname || '').toString()
+        const name = (fn || ln) ? `${fn} ${ln}`.trim() : '-'
+
+        this.selectedCharId = c.id != null ? Number(c.id) : null
+
+        this.character = {
+          name: name,
+          birthdate: c.birthdate || '-',
+          job: c.job || '-',
+          position: c.position || '-'
+        }
+        return
+      }
+
+      if (d.action === 'select') {
+        if (d.character) {
+          const c = d.character
+          const fn = (c.firstname || '').toString()
+          const ln = (c.lastname || '').toString()
+          const name = (fn || ln) ? `${fn} ${ln}`.trim() : '-'
+          this.selectedCharId = c.id != null ? Number(c.id) : this.selectedCharId
+          this.character = {
+            name: name,
+            birthdate: c.birthdate || this.character.birthdate,
+            job: c.job || this.character.job,
+            position: c.position || this.character.position
+          }
+        } else if (d.id != null) {
+          this.selectedCharId = Number(d.id)
+        }
+      }
+    },
+    play() {
+      if (!this.selectedCharId) return
+      this.post('play', { id: this.selectedCharId })
+    },
+    create() {
+      this.post('create', {})
+    },
+    close() {
+      this.post('close', {})
     }
   }
 }
-
 </script>
 
 <style scoped>
@@ -111,7 +201,7 @@ export default {
   font-size: 1.8vh;
 }
 
-.character-info .select {
+.select {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,6 +211,7 @@ export default {
   background-color: #ff0055;
   color: white;
   border: none;
+  border-radius: .5vh;
 
   font-family: "Akrobat-ExtraBold", sans-serif;
   letter-spacing: 1px;
@@ -132,11 +223,16 @@ export default {
   transition: .2s;
 }
 
-.character-info .select:hover {
+.select:hover {
   filter: brightness(70%);
 }
 
-.character-info .select i {
+.select i {
   font-size: 1.3vh;
+}
+
+.select:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 </style>
