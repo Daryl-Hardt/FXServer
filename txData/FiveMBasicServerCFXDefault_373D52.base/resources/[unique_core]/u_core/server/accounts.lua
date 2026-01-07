@@ -5,11 +5,12 @@ function GetAccountByIdentifier(identifier, cb)
 end
 
 function CreateAccount(identifier, name, cb)
-    DB.insert("INSERT INTO accounts (identifier, name, is_whitelisted, `group`) VALUES (?, ?, ?, ?)", {
+    DB.insert("INSERT INTO accounts (identifier, name, is_whitelisted, `group`, `max_chars`) VALUES (?, ?, ?, ?, ?)", {
         identifier,
         name,
         0,
-        "user"
+        "user",
+        Config.DefaultMaxChars
     }, function(id)
         if cb then
             cb(id)

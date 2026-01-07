@@ -2,6 +2,8 @@ Config = {}
 
 Config.Debug = true
 
+Config.DefaultMaxChars = 2
+
 Config.StartMoney = 1000
 Config.StartBank = 5000
 

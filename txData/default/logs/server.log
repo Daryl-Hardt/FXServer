@@ -1,81 +1,80 @@
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 00:52:29
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 14:38:59
 ================================================================
 ================================================================
-======== Log Rotated - 9.12.2025, 00:52:29                      
+======== Log Rotated - 6.1.2026, 14:38:59                       
 ================================================================
-[00:52:32] txAdmin: Logger started
-[00:53:38] [LqAQD#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[14:39:01] txAdmin: Logger started
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 01:05:36
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 14:39:11
 ================================================================
-[01:05:38] txAdmin: Logger started
-[01:07:00] [j8hRJ#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[14:39:13] txAdmin: Logger started
+[14:39:28] [TTeN6#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, license2:2965…cd21]
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 01:13:06
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 14:55:07
 ================================================================
-[01:13:08] txAdmin: Logger started
-[01:14:01] [qQ9MC#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[01:20:30] [qQ9MC#1] Daryl: disconnected (Exiting)
+[14:55:10] txAdmin: Logger started
+[14:55:40] [YB6iz#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[14:58:19] [YB6iz#1] Daryl: disconnected (Exiting)
+[15:00:12] [YB6iz#2] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[15:00:50] [YB6iz#2] Daryl: enabled noclip
+[15:00:56] [YB6iz#2] Daryl: became mortal (standard mode)
+[15:02:14] [YB6iz#2] Daryl: disconnected (Exiting)
+[15:10:30] [YB6iz#3] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[15:12:25] [YB6iz#3] Daryl: said "/pos"
+[15:13:08] [YB6iz#3] Daryl: said "/reload"
+[15:14:53] [YB6iz#3] Daryl: spawned a vehicle (model: sentinel4)
+[15:15:01] [YB6iz#3] Daryl: spawned a vehicle (model: sentinel3)
+[15:15:05] [YB6iz#3] Daryl: spawned a vehicle (model: komoda)
+[15:15:36] [YB6iz#3] Daryl: enabled noclip
+[15:16:07] [YB6iz#3] Daryl: became mortal (standard mode)
+[15:19:13] [YB6iz#3] Daryl: enabled noclip
+[15:20:47] [YB6iz#3] Daryl: became mortal (standard mode)
+[15:20:50] [YB6iz#3] Daryl: disconnected (Exiting)
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 01:20:38
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 15:25:24
 ================================================================
-[01:20:40] txAdmin: Logger started
-[01:21:10] [ttNEx#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[15:25:26] txAdmin: Logger started
+[15:25:49] [mekE4#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[15:27:01] [mekE4#1] Daryl: enabled noclip
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 01:33:43
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 15:43:44
 ================================================================
-[01:33:45] txAdmin: Logger started
-[01:34:43] [BHLwi#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[01:37:28] [BHLwi#1] Daryl: disconnected (Exiting)
+[15:43:46] txAdmin: Logger started
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 01:45:29
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 15:45:32
 ================================================================
-[01:45:31] txAdmin: Logger started
-[01:45:47] [kyUCP#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[01:46:36] [kyUCP#1] Daryl: disconnected (Disconnected.)
-[01:47:42] [kyUCP#2] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[01:51:53] [kyUCP#2] Daryl: disconnected (Exiting)
+[15:45:35] txAdmin: Logger started
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 01:52:01
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 15:53:56
 ================================================================
-[01:52:03] txAdmin: Logger started
-[01:53:04] [PBky3#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[01:53:32] [PBky3#1] Daryl: disconnected (Exiting)
-[01:54:54] [PBky3#2] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[01:59:26] [PBky3#2] Daryl: disconnected (Exiting)
+[15:53:58] txAdmin: Logger started
+[15:56:46] [dhkW4#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[15:57:11] [dhkW4#1] Daryl: enabled noclip
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 02:02:11
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 15:58:12
 ================================================================
-[02:02:13] txAdmin: Logger started
-[02:02:25] [iKNhg#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[02:02:42] [iKNhg#1] Daryl: died from suicide (Falling)
+[15:58:15] txAdmin: Logger started
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 02:06:18
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 15:59:21
 ================================================================
-[02:06:20] txAdmin: Logger started
-[02:06:52] [q7Ffb#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[02:08:39] [q7Ffb#1] Daryl: said "/uit"
-[02:08:41] [q7Ffb#1] Daryl: said "/uit"
-[02:08:42] [q7Ffb#1] Daryl: disconnected (Exiting)
-[02:10:05] [q7Ffb#2] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[02:11:14] [q7Ffb#2] Daryl: disconnected (Exiting)
-[02:11:43] [q7Ffb#3] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[02:16:39] [q7Ffb#3] Daryl: said "/uit"
-[02:16:40] [q7Ffb#3] Daryl: disconnected (Exiting)
+[15:59:23] txAdmin: Logger started
+[15:59:57] [zxqBz#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[16:01:06] [zxqBz#1] Daryl: enabled noclip
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 02:16:44
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 16:03:18
 ================================================================
-[02:16:46] txAdmin: Logger started
-[02:17:10] [Bcqz3#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[16:03:20] txAdmin: Logger started
 ================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 02:20:18
+======== txAdmin v8.0.1 atop fxserver 17000 Starting - 6.1.2026, 16:06:27
 ================================================================
-[02:20:20] txAdmin: Logger started
-[02:20:45] [GkFFQ#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
-[02:22:57] [GkFFQ#1] Daryl: disconnected (Exiting)
-================================================================
-======== txAdmin v8.0.1 atop fxserver 17000 Starting - 9.12.2025, 02:26:23
-================================================================
-[02:26:25] txAdmin: Logger started
-[02:26:46] [LFQg8#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[16:06:30] txAdmin: Logger started
+[16:06:48] [9g8XN#1] Daryl: joined with identifiers [license:bb97…f6be, xbl:2535…2885, live:9851…3810, discord:3467…3873, fivem:182841, license2:2965…cd21]
+[16:07:39] [9g8XN#1] Daryl: enabled noclip
+[16:10:57] [9g8XN#1] Daryl: became mortal (standard mode)
+[16:12:58] [9g8XN#1] Daryl: teleported to coordinates (x=-787.780, y=334.923, z=215.838)
+[16:13:08] [9g8XN#1] Daryl: enabled noclip
+[16:14:39] [9g8XN#1] Daryl: teleported to coordinates (x=-790.250, y=334.750, z=215.840)
+[16:15:14] [9g8XN#1] Daryl: became mortal (standard mode)
+[16:15:35] [9g8XN#1] Daryl: enabled noclip
+[16:17:51] [9g8XN#1] Daryl: became mortal (standard mode)

@@ -10,6 +10,7 @@ function UCore.Player.new(src, account, character)
     self.accountId = account.id
     self.accountIdentifier = account.identifier
     self.accountGroup = account["group"] or "user"
+    self.accountMaxChars = account.max_chars or Config.DefaultMaxChars
     self.charId = character.id
     self.firstname = character.firstname
     self.lastname = character.lastname
@@ -42,6 +43,10 @@ end
 
 function UCore.Player:GetCharId()
     return self.charId
+end
+
+function UCore.Player:GetMaxChars()
+    return self.accountMaxChars
 end
 
 function UCore.Player:GetName()

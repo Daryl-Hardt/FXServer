@@ -1,11 +1,11 @@
 ================================================================
-======== Log Rotated - 9.12.2025, 00:52:29                      
+======== Log Rotated - 6.1.2026, 14:38:59                       
 ================================================================
 ║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [27092] FXServer Starting - 9.12.2025, 00:52:30        
+║             TXADMIN║ ======== [15172] FXServer Starting - 6.1.2026, 14:38:59         
 ║             TXADMIN║ ================================================================
 [           resources] Scanning resources.
-[           resources] Found 28 resources.
+[           resources] Found 31 resources.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for monitor
@@ -15,58 +15,8 @@
 [           resources] Started resource mapmanager
 [    c-scripting-core] Creating script environments for chat
 [           resources] Started resource chat
-[           resources] Started resource spawnmanager
 [    c-scripting-core] Creating script environments for sessionmanager
 [           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
-[    c-scripting-core] Creating script environments for hardcap
-[           resources] Started resource hardcap
-[    c-scripting-core] Creating script environments for oxmysql
-[           resources] Started resource oxmysql
-[    c-scripting-core] Creating script environments for u_core
-[           resources] Started resource u_core
-[    c-scripting-core] Creating script environments for u_login
-[           resources] Started resource u_login
-[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
-[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-skater
-[           resources] Started resource fivem-map-skater
-[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
-[ citizen-server-impl]         fff                          
-[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
-[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
-[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
-[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
-[ citizen-server-impl]                                      
-[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[       script:u_core] [u_core] Spieler Daryl hat 0 Charakter(e)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[       script:u_core] [u_core] Charakter geladen: Leroy Saint für Daryl
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [34560] FXServer Starting - 9.12.2025, 01:05:36        
-║             TXADMIN║ ================================================================
-[           resources] Scanning resources.
-[           resources] Found 29 resources.
-[          svadhesive] Authenticating server license key...
-[          svadhesive] Server license key authentication succeeded. Welcome!
-[    c-scripting-core] Creating script environments for monitor
-[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
-[           resources] Started resource monitor
-[    c-scripting-core] Creating script environments for mapmanager
-[           resources] Started resource mapmanager
-[    c-scripting-core] Creating script environments for chat
-[           resources] Started resource chat
-[           resources] Started resource spawnmanager
-[    c-scripting-core] Creating script environments for sessionmanager
-[           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
 [    c-scripting-core] Creating script environments for hardcap
 [           resources] Started resource hardcap
 [    c-scripting-core] Creating script environments for oxmysql
@@ -79,8 +29,6 @@
 [           resources] Started resource u_multichar
 [ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
 [ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-skater
-[           resources] Started resource fivem-map-skater
 [      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
@@ -89,18 +37,11 @@
 [ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
 [ citizen-server-impl]                                      
 [ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[       script:u_core] [u_core] Spieler Daryl hat 1 Charakter(e)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[       script:u_core] [u_core] Player entfernt: 1 Grund: Server shutting down: Quit command executed.
-[ citizen-server-main] -> Quitting: host shutting down
 ║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [35120] FXServer Starting - 9.12.2025, 01:13:06        
+║             TXADMIN║ ======== [41788] FXServer Starting - 6.1.2026, 14:39:11         
 ║             TXADMIN║ ================================================================
 [           resources] Scanning resources.
-[           resources] Found 29 resources.
+[           resources] Found 31 resources.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for monitor
@@ -110,11 +51,8 @@
 [           resources] Started resource mapmanager
 [    c-scripting-core] Creating script environments for chat
 [           resources] Started resource chat
-[           resources] Started resource spawnmanager
 [    c-scripting-core] Creating script environments for sessionmanager
 [           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
 [    c-scripting-core] Creating script environments for hardcap
 [           resources] Started resource hardcap
 [    c-scripting-core] Creating script environments for oxmysql
@@ -125,57 +63,10 @@
 [           resources] Started resource u_login
 [    c-scripting-core] Creating script environments for u_multichar
 [           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
 [ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
 [ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-hipster
-[           resources] Started resource fivem-map-hipster
-[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
-[ citizen-server-impl]         fff                          
-[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
-[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
-[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
-[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
-[ citizen-server-impl]                                      
-[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[       script:u_core] [u_core] playerJoining: öffne Multichar für Spieler 1
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [46564] FXServer Starting - 9.12.2025, 01:20:38        
-║             TXADMIN║ ================================================================
-[           resources] Scanning resources.
-[           resources] Found 29 resources.
-[          svadhesive] Authenticating server license key...
-[          svadhesive] Server license key authentication succeeded. Welcome!
-[    c-scripting-core] Creating script environments for monitor
-[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
-[           resources] Started resource monitor
-[    c-scripting-core] Creating script environments for mapmanager
-[           resources] Started resource mapmanager
-[    c-scripting-core] Creating script environments for chat
-[           resources] Started resource chat
-[           resources] Started resource spawnmanager
-[    c-scripting-core] Creating script environments for sessionmanager
-[           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
-[    c-scripting-core] Creating script environments for hardcap
-[           resources] Started resource hardcap
-[    c-scripting-core] Creating script environments for oxmysql
-[           resources] Started resource oxmysql
-[    c-scripting-core] Creating script environments for u_core
-[           resources] Started resource u_core
-[    c-scripting-core] Creating script environments for u_login
-[           resources] Started resource u_login
-[    c-scripting-core] Creating script environments for u_multichar
-[           resources] Started resource u_multichar
-[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
-[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-hipster
-[           resources] Started resource fivem-map-hipster
 [      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
@@ -187,15 +78,11 @@
 [      script:hardcap] Connecting: Daryl
 [      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 ║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [27092] FXServer Starting - 9.12.2025, 01:33:43        
+║             TXADMIN║ ======== [19736] FXServer Starting - 6.1.2026, 14:55:07         
 ║             TXADMIN║ ================================================================
 [           resources] Scanning resources.
-[           resources] Found 29 resources.
+[           resources] Found 31 resources.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for monitor
@@ -205,11 +92,8 @@
 [           resources] Started resource mapmanager
 [    c-scripting-core] Creating script environments for chat
 [           resources] Started resource chat
-[           resources] Started resource spawnmanager
 [    c-scripting-core] Creating script environments for sessionmanager
 [           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
 [    c-scripting-core] Creating script environments for hardcap
 [           resources] Started resource hardcap
 [    c-scripting-core] Creating script environments for oxmysql
@@ -220,10 +104,10 @@
 [           resources] Started resource u_login
 [    c-scripting-core] Creating script environments for u_multichar
 [           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
 [ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
 [ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-hipster
-[           resources] Started resource fivem-map-hipster
 [      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
@@ -237,64 +121,26 @@
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [       script:u_core] [u_core] Player entfernt: 1 Grund: Exiting
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [2380] FXServer Starting - 9.12.2025, 01:45:30         
-║             TXADMIN║ ================================================================
-[           resources] Scanning resources.
-[           resources] Found 29 resources.
-[          svadhesive] Authenticating server license key...
-[          svadhesive] Server license key authentication succeeded. Welcome!
-[    c-scripting-core] Creating script environments for monitor
-[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
-[           resources] Started resource monitor
-[    c-scripting-core] Creating script environments for mapmanager
-[           resources] Started resource mapmanager
-[    c-scripting-core] Creating script environments for chat
-[           resources] Started resource chat
-[           resources] Started resource spawnmanager
-[    c-scripting-core] Creating script environments for sessionmanager
-[           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
-[    c-scripting-core] Creating script environments for hardcap
-[           resources] Started resource hardcap
-[    c-scripting-core] Creating script environments for oxmysql
-[           resources] Started resource oxmysql
-[    c-scripting-core] Creating script environments for u_core
-[           resources] Started resource u_core
-[    c-scripting-core] Creating script environments for u_login
-[           resources] Started resource u_login
-[    c-scripting-core] Creating script environments for u_multichar
-[           resources] Started resource u_multichar
-[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
-[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-hipster
-[           resources] Started resource fivem-map-hipster
-[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
-[ citizen-server-impl]         fff                          
-[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
-[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
-[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
-[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
-[ citizen-server-impl]                                      
-[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
 [      script:hardcap] Connecting: Daryl
 [      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[       script:u_core] [u_core] Player entfernt: 1 Grund: Disconnected.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [       script:u_core] [u_core] Player entfernt: 2 Grund: Exiting
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[      script:hardcap] Connecting: Daryl
+[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[       script:u_core] [u_core] Player entfernt: 3 Grund: Exiting
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 ║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [47424] FXServer Starting - 9.12.2025, 01:52:02        
+║             TXADMIN║ ======== [7696] FXServer Starting - 6.1.2026, 15:25:24          
 ║             TXADMIN║ ================================================================
 [           resources] Scanning resources.
-[           resources] Found 29 resources.
+[           resources] Found 32 resources.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for monitor
@@ -304,11 +150,8 @@
 [           resources] Started resource mapmanager
 [    c-scripting-core] Creating script environments for chat
 [           resources] Started resource chat
-[           resources] Started resource spawnmanager
 [    c-scripting-core] Creating script environments for sessionmanager
 [           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
 [    c-scripting-core] Creating script environments for hardcap
 [           resources] Started resource hardcap
 [    c-scripting-core] Creating script environments for oxmysql
@@ -319,10 +162,13 @@
 [           resources] Started resource u_login
 [    c-scripting-core] Creating script environments for u_multichar
 [           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
 [ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
 [ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-skater
-[           resources] Started resource fivem-map-skater
 [      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
@@ -335,16 +181,15 @@
 [      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 ║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [48596] FXServer Starting - 9.12.2025, 02:02:11        
+║             TXADMIN║ ======== [30940] FXServer Starting - 6.1.2026, 15:43:44         
 ║             TXADMIN║ ================================================================
 [           resources] Scanning resources.
-[           resources] Found 29 resources.
+[           resources] Found 32 resources.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for monitor
@@ -354,11 +199,8 @@
 [           resources] Started resource mapmanager
 [    c-scripting-core] Creating script environments for chat
 [           resources] Started resource chat
-[           resources] Started resource spawnmanager
 [    c-scripting-core] Creating script environments for sessionmanager
 [           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
 [    c-scripting-core] Creating script environments for hardcap
 [           resources] Started resource hardcap
 [    c-scripting-core] Creating script environments for oxmysql
@@ -369,10 +211,13 @@
 [           resources] Started resource u_login
 [    c-scripting-core] Creating script environments for u_multichar
 [           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
 [ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
 [ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-hipster
-[           resources] Started resource fivem-map-hipster
 [      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
 [ citizen-server-impl]         fff                          
 [ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
@@ -381,159 +226,12 @@
 [ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
 [ citizen-server-impl]                                      
 [ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-main] -> Quitting: host shutting down
 ║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [50280] FXServer Starting - 9.12.2025, 02:06:19        
+║             TXADMIN║ ======== [39088] FXServer Starting - 6.1.2026, 15:45:33         
 ║             TXADMIN║ ================================================================
 [           resources] Scanning resources.
-[           resources] Found 29 resources.
-[          svadhesive] Authenticating server license key...
-[          svadhesive] Server license key authentication succeeded. Welcome!
-[    c-scripting-core] Creating script environments for monitor
-[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
-[           resources] Started resource monitor
-[    c-scripting-core] Creating script environments for mapmanager
-[           resources] Started resource mapmanager
-[    c-scripting-core] Creating script environments for chat
-[           resources] Started resource chat
-[           resources] Started resource spawnmanager
-[    c-scripting-core] Creating script environments for sessionmanager
-[           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
-[    c-scripting-core] Creating script environments for hardcap
-[           resources] Started resource hardcap
-[    c-scripting-core] Creating script environments for oxmysql
-[           resources] Started resource oxmysql
-[    c-scripting-core] Creating script environments for u_core
-[           resources] Started resource u_core
-[    c-scripting-core] Creating script environments for u_login
-[           resources] Started resource u_login
-[    c-scripting-core] Creating script environments for u_multichar
-[           resources] Started resource u_multichar
-[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
-[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-skater
-[           resources] Started resource fivem-map-skater
-[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
-[ citizen-server-impl]         fff                          
-[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
-[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
-[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
-[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
-[ citizen-server-impl]                                      
-[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [45100] FXServer Starting - 9.12.2025, 02:16:44        
-║             TXADMIN║ ================================================================
-[           resources] Scanning resources.
-[           resources] Found 29 resources.
-[          svadhesive] Authenticating server license key...
-[          svadhesive] Server license key authentication succeeded. Welcome!
-[    c-scripting-core] Creating script environments for monitor
-[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
-[           resources] Started resource monitor
-[    c-scripting-core] Creating script environments for mapmanager
-[           resources] Started resource mapmanager
-[    c-scripting-core] Creating script environments for chat
-[           resources] Started resource chat
-[           resources] Started resource spawnmanager
-[    c-scripting-core] Creating script environments for sessionmanager
-[           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
-[    c-scripting-core] Creating script environments for hardcap
-[           resources] Started resource hardcap
-[    c-scripting-core] Creating script environments for oxmysql
-[           resources] Started resource oxmysql
-[    c-scripting-core] Creating script environments for u_core
-[           resources] Started resource u_core
-[    c-scripting-core] Creating script environments for u_login
-[           resources] Started resource u_login
-[    c-scripting-core] Creating script environments for u_multichar
-[           resources] Started resource u_multichar
-[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
-[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-skater
-[           resources] Started resource fivem-map-skater
-[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
-[ citizen-server-impl]         fff                          
-[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
-[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
-[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
-[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
-[ citizen-server-impl]                                      
-[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [9520] FXServer Starting - 9.12.2025, 02:20:18         
-║             TXADMIN║ ================================================================
-[           resources] Scanning resources.
-[           resources] Found 29 resources.
-[          svadhesive] Authenticating server license key...
-[          svadhesive] Server license key authentication succeeded. Welcome!
-[    c-scripting-core] Creating script environments for monitor
-[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
-[           resources] Started resource monitor
-[    c-scripting-core] Creating script environments for mapmanager
-[           resources] Started resource mapmanager
-[    c-scripting-core] Creating script environments for chat
-[           resources] Started resource chat
-[           resources] Started resource spawnmanager
-[    c-scripting-core] Creating script environments for sessionmanager
-[           resources] Started resource sessionmanager
-[   script:mapmanager] Started gametype Freeroam
-[           resources] Started resource basic-gamemode
-[    c-scripting-core] Creating script environments for hardcap
-[           resources] Started resource hardcap
-[    c-scripting-core] Creating script environments for oxmysql
-[           resources] Started resource oxmysql
-[    c-scripting-core] Creating script environments for u_core
-[           resources] Started resource u_core
-[    c-scripting-core] Creating script environments for u_login
-[           resources] Started resource u_login
-[    c-scripting-core] Creating script environments for u_multichar
-[           resources] Started resource u_multichar
-[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
-[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
-[   script:mapmanager] Started map fivem-map-skater
-[           resources] Started resource fivem-map-skater
-[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
-[ citizen-server-impl]         fff                          
-[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
-[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
-[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
-[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
-[ citizen-server-impl]                                      
-[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
-[      script:hardcap] Connecting: Daryl
-[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
-║             TXADMIN║ ================================================================
-║             TXADMIN║ ======== [52488] FXServer Starting - 9.12.2025, 02:26:23        
-║             TXADMIN║ ================================================================
-[           resources] Scanning resources.
-[           resources] Found 29 resources.
+[           resources] Found 32 resources.
 [          svadhesive] Authenticating server license key...
 [          svadhesive] Server license key authentication succeeded. Welcome!
 [    c-scripting-core] Creating script environments for monitor
@@ -555,6 +253,54 @@
 [           resources] Started resource u_login
 [    c-scripting-core] Creating script environments for u_multichar
 [           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [32164] FXServer Starting - 6.1.2026, 15:53:56         
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[           resources] Found 32 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for u_core
+[           resources] Started resource u_core
+[    c-scripting-core] Creating script environments for u_login
+[           resources] Started resource u_login
+[    c-scripting-core] Creating script environments for u_multichar
+[           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
 [ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
 [ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
 [      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
@@ -567,4 +313,194 @@
 [ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
 [      script:hardcap] Connecting: Daryl
 [      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [37848] FXServer Starting - 6.1.2026, 15:58:13         
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[           resources] Found 32 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for u_core
+[           resources] Started resource u_core
+[    c-scripting-core] Creating script environments for u_login
+[           resources] Started resource u_login
+[    c-scripting-core] Creating script environments for u_multichar
+[           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [37804] FXServer Starting - 6.1.2026, 15:59:21         
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[           resources] Found 32 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for u_core
+[           resources] Started resource u_core
+[    c-scripting-core] Creating script environments for u_login
+[           resources] Started resource u_login
+[    c-scripting-core] Creating script environments for u_multichar
+[           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
+[      script:hardcap] Connecting: Daryl
+[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [29464] FXServer Starting - 6.1.2026, 16:03:18         
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[           resources] Found 32 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for u_core
+[           resources] Started resource u_core
+[    c-scripting-core] Creating script environments for u_login
+[           resources] Started resource u_login
+[    c-scripting-core] Creating script environments for u_multichar
+[           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
+[      script:hardcap] Connecting: Daryl
+[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[      script:hardcap] Connecting: Daryl
+[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [3420] FXServer Starting - 6.1.2026, 16:06:28          
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[           resources] Found 32 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for u_core
+[           resources] Started resource u_core
+[    c-scripting-core] Creating script environments for u_login
+[           resources] Started resource u_login
+[    c-scripting-core] Creating script environments for u_multichar
+[           resources] Started resource u_multichar
+[    c-scripting-core] Creating script environments for u_charcreator
+[           resources] Started resource u_charcreator
+[    c-scripting-core] Creating script environments for u_commands
+[           resources] Started resource u_commands
+[           resources] Started resource u_ipls
+[ citizen-server-main] Warning: The players.json endpoint has been modified to no longer return the player identifiers without authentication.
+[ citizen-server-main] To learn more about this change read our announcement at https://aka.cfx.re/players-json-privacy
+[      script:oxmysql] [10.4.32-MariaDB] Database server connection established!
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://m-a-e-s-t-r-o-8rd5yv.users.cfx.re/
+[      script:hardcap] Connecting: Daryl
+[      script:u_login] [u_login] Whitelist OK für license:bb979b43fa3c8eda87f05b57462f401a303bf6be (Daryl)
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+[ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
 [ citizen-server-impl] Server list query returned an error: System.Net.Sockets.SocketException: Connection reset by peer <- System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. <- System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.

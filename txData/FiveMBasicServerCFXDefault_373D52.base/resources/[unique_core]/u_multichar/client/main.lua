@@ -1,10 +1,7 @@
 local uiOpen = false
 local tracking = false
 local charCam = nil
-
-local uiOpen = false
-local tracking = false
-local charCam = nil
+local currentCharId = nil
 
 local function StartCharSelectCam()
     local ped = PlayerPedId()
@@ -14,7 +11,7 @@ local function StartCharSelectCam()
 
     DoScreenFadeOut(0)
     while not IsScreenFadedOut() do
-        Citizen.Wait(0)
+        Wait(0)
     end
 
     local spawnX, spawnY, spawnZ, spawnH = -710.33405, 4477.121, 17.451294, 0.0
@@ -33,7 +30,7 @@ local function StartCharSelectCam()
 
     local timeout = GetGameTimer() + 5000
     while not HasCollisionLoadedAroundEntity(ped) and GetGameTimer() < timeout do
-        Citizen.Wait(0)
+        Wait(0)
     end
 
     if charCam ~= nil then
@@ -72,18 +69,18 @@ AddEventHandler('onClientResourceStart', function(resName)
         return
     end
 
-    Citizen.CreateThread(function()
+    CreateThread(function()
         while not NetworkIsPlayerActive(PlayerId()) do
-            Citizen.Wait(0)
+            Wait(0)
         end
 
         StartCharSelectCam()
-        Citizen.Wait(200)
+        Wait(200)
         TriggerServerEvent('u_multichar:open')
     end)
 end)
 
-RegisterCommand("chars", function(source, args, raw)
+RegisterCommand("chars", function()
     TriggerServerEvent('u_multichar:open')
 end, false)
 
@@ -101,12 +98,11 @@ RegisterNetEvent('u_multichar:close')
 AddEventHandler('u_multichar:close', function()
     uiOpen = false
     SetNuiFocus(false, false)
-    SendNUIMessage({
-        action = 'close'
-    })
+    SendNUIMessage({ action = 'close' })
 end)
 
 RegisterNUICallback('selectCharacter', function(data, cb)
+    currentCharId = tonumber(data.id)
     TriggerServerEvent('u_multichar:selectCharacter', data)
     cb('ok')
 end)
@@ -121,7 +117,7 @@ RegisterNUICallback('deleteCharacter', function(data, cb)
     cb('ok')
 end)
 
-RegisterNUICallback('close', function(data, cb)
+RegisterNUICallback('close', function(_, cb)
     uiOpen = false
     SetNuiFocus(false, false)
     SendNUIMessage({ action = 'close' })
@@ -129,31 +125,28 @@ RegisterNUICallback('close', function(data, cb)
     cb('ok')
 end)
 
-
 RegisterNetEvent('u_multichar:spawn')
 AddEventHandler('u_multichar:spawn', function(data)
     if not data then return end
 
     local ped = PlayerPedId()
 
-    local x = data.x + 0.0
-    local y = data.y + 0.0
-    local z = data.z + 0.0
-    local heading = data.heading + 0.0
-
-    SetEntityCoords(ped, x, y, z, false, false, false, true)
-    SetEntityHeading(ped, heading)
+    SetEntityCoords(ped, data.x + 0.0, data.y + 0.0, data.z + 0.0, false, false, false, true)
+    SetEntityHeading(ped, data.heading + 0.0)
     StopCharSelectCam()
 
-    tracking = true
+    if currentCharId then
+        TriggerServerEvent('u_charcreator:requestSkin', currentCharId)
+    end
 
-    Citizen.CreateThread(function()
+    tracking = true
+    CreateThread(function()
         while tracking do
             local p = PlayerPedId()
             local px, py, pz = table.unpack(GetEntityCoords(p))
             local ph = GetEntityHeading(p)
             TriggerServerEvent('u_core:updatePosition', px, py, pz, ph)
-            Citizen.Wait(5000)
+            Wait(5000)
         end
     end)
 end)
