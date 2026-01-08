@@ -26,8 +26,8 @@
       </button>
     </div>
 
-    <button class="select" v-if="newCharacter" @click="create">
-      Neuen Charakter erstellen
+    <button class="select create" v-if="newCharacter" @click="create">
+      <i class="fa-solid fa-plus"></i> Neuen Charakter erstellen
     </button>
   </div>
 </template>
@@ -210,7 +210,7 @@ export default {
   text-transform: uppercase;
   background-color: #ff0055;
   color: white;
-  border: none;
+  border: 1px solid #c50d4a;
   border-radius: .5vh;
 
   font-family: "Akrobat-ExtraBold", sans-serif;
@@ -232,7 +232,14 @@ export default {
 }
 
 .select:disabled {
-  opacity: 0.5;
+  filter: brightness(70%);
   cursor: default;
+}
+
+.create {
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+  padding: 1vh 2vh;
 }
 </style>
