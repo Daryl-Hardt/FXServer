@@ -68,7 +68,7 @@ AddEventHandler('u_multichar:beginCreate', function()
 
     exports['u_core']:GetCharactersByAccountId(account.id, function(chars)
       chars = chars or {}
-      local maxChars = tonumber(account.max_chars) or Config.DefaultMaxChars
+      local maxChars = tonumber(account.max_chars)
       local count = #chars
 
       if count >= maxChars then

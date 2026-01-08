@@ -1,7 +1,5 @@
 Config = {}
 
-Config.DefaultMaxChars = 2
-
 Config.InitialSpawn = {
   x = -1037.84,
   y = -2737.86,

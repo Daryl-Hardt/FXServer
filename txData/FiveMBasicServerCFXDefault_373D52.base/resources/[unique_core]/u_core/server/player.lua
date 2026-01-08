@@ -10,7 +10,7 @@ function UCore.Player.new(src, account, character)
     self.accountId = account.id
     self.accountIdentifier = account.identifier
     self.accountGroup = account["group"] or "user"
-    self.accountMaxChars = account.max_chars or Config.DefaultMaxChars
+    self.accountMaxChars = account.max_chars or 1
     self.charId = character.id
     self.firstname = character.firstname
     self.lastname = character.lastname
